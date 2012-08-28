@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Humanoids 2012: Adult-Size Humanoid Robot Throwing the First
+Pitch at a Major League Baseball Game
+A Road Map</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" />
+
+    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.6.1.min.js"><\/script>')</script>
+
+    <script src="js/jquery.smoothscroll.js"></script>
+    <script src="js/jquery.nivo.slider.pack.js"></script>
+    <script src="js/jquery.easing-1.3.pack.js"></script>
+    <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="js/init.js"></script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32850848-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body>
+
+<!-- header-wrap -->
+<section>id="mocap"</section>
+<div id="header-wrap">
+    <header>
+
+        <hgroup>
+            <h1><a href="index.html">Daniel M. Lofaro</a></h1>
+            <h3>Humanoids 2012:</h3>
+
+        </hgroup>
+
+        <nav>
+            <ul>
+                <li><a href="#main">Home</a></li>
+<!--                <li><a href="#services">Services</a></li>-->
+<!--                <li><a href="#portfolio">Our Works</a></li>-->
+<!--                <li><a href="#about-us">About Us</a></li>-->
+<!--                <li><a href="#styles">Styles</a></li> -->
+                <li><a href="mailto:drchubo@gmail.com">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+</div>
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+    <!-- main -->
+    <section id="main">
+
+        <div class="intro-box">
+           <h1>Humanoids 2012:</h1>
+		   <h3>Daniel M. Lofaro</h3>
+		   <h2>Title: Humanoid Pitching at a Major League Baseball Game: Challenges, Approach, Implementation and Lessons Learned</h2>
+			<div align="justify">
+           <p class="intro"><b>Abstract</b> - Three different approaches of having a full-size
+humanoid throw the first pitch at a Major League Baseball game
+are tested and implemented. The approaches include kinematic
+mapping using a motion capture system to capture a human's
+throwing motion then mapping that to a full-size humanoid.
+The second method is a fully automated approach that uses
+the sparse reachable map to provide viable full body throwing
+trajectories to provide the end effector with the desired velocity.
+The third approach borrows from the animation industry.
+The key-frames of the desired trajectory are constructed by
+hand. The time between each key-frame is defined by the user.
+Interpolation methods are used to smoothly move between key
+frames while limiting the jerk. Each method is analyzed and
+tested in simulation and on physical hardware. The full-size
+humanoid used is the Hubo series robot. Based on the latter tests
+one method was chosen to successfully throw the ceremonial first
+pitch at a Major League Baseball game in April 2012.</p>
+</div>
+
+<!--
+          <p class="intro"> Our Team:
+			In early February 2012 the director of the Philadelphia
+Science Festival asked the Drexel Autonomous Systems Lab
+(DASL)1 if they could have their full-size humanoid Jaemi
+Hubo throw the ceremonial first pitch at the second annual
+Science Night at the Ballpark. On April 28th, 2012 Hubo
+successfully threw the first pitch at the Philadelphia Phillies
+vs. Chicago Cubs game, see Fig. 1.
+Hubo was the first full-size humanoid to throw the inaugural
+pitch at a Major League Baseball game. This task
+poses challenges in the area of fully-body locomotion, coordination
+and stabilization that must be addressed.
+			</p>
+			-->
+
+        </div>
+
+        <div class="slider-wrapper">
+
+            <div id="slider" class="nivoSlider">
+                <img src="images/slides/hubo1.png" width="383" height="198" alt="" title="Throwing the first pitch at a Major League Baseball game"/>
+                <img src="images/slides/hubo2.png" width="383" height="198" alt="" title="Robot (Low DOF) and Human (High DOF) kinimatic models"/>
+                <img src="images/slides/hubo3.png" width="383" height="198" alt="" title="MoCap &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  OpenRAVE  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   Robot"/>
+				<img src="images/slides/hubo4.png" width="383" height="198" alt="" title="End-effector velocity dueing each throwing phase"/>
+		
+		
+            </div>
+           
+			
+			
+			
+			<br></br>
+			
+			<!-- <p><iframe width="425" height="239" src="http://www.youtube.com/embed/IDi7aRyIghc" frameborder="0" allowfullscreen></iframe></p> -->
+			<p><iframe width="425" height="239" src="http://www.youtube.com/embed/dSjIZ73bAJs" frameborder="0" allowfullscreen></iframe></p>
+			
+			
+			<div align="justify">
+			<p> <font size=2> This project was conducted by the Drexel Autonomous
+Systems Lab (DASL), the Music Entertainment Technology
+Lab (MET)4, and sponsored by the National Science
+Foundation via the two grants; Partnerships for International
+Research and Education (#0730206) and Major Research
+Infrastructure Recovery and Reinvestment (#CNS-0960061).
+			</font>
+			</p>
+			</div>
+
+			
+			
+        </div>
+
+        <div class="row no-bottom-margin" align="justify">
+	
+	<h2>Human to Humanoid Kinematic Mapping:</h2>
+        <section id="mocap" class="col">
+		<p>(Left to Right): (1) Human throwing underhand in sagittal plane
+while being recorded via a motion capture system. (2) Recorded trajectory
+mapped to high degree of freedom model. (3) High degree of freedom model
+mapped to lower degree of freedom OpenHUBO. (4) Resulting trajectory
+and balancing algorithm run on Hubo.</p>
+		
+	</section>
+
+	<section  class="col mid">
+	<a href="pix/underhand.jpg"><img src="pix/underhand.jpg" width = 300 /></a>
+		
+	</section>
+
+	<section class="col">
+		<iframe width="300" height="220" src="http://www.youtube.com/embed/tlXdzdZEwvo" frameborder="0" allowfullscreen></iframe>
+	</section>
+        
+
+        <a class="back-to-top" href="#main">Back to Top</a>
+</div>
+
+<!-- Second column -->
+
+        <div class="row no-bottom-margin" align="justify">
+	
+	<h2>Key-Frame Motion:</h2>
+        <section id="keyframe" class="col">
+		<p>Key-frame motion profiles for humanoids borrows from
+the animation industries' long used techniques. When making
+an animation the master artist/cartoonist will create the
+character in the most important (or key) poses. The apprentice
+will draw all of the frames between the key poses. We
+borrowed this technique when we: posed the robot in the
+desired pose, record the values in joint space, and make a
+smooth motion between poses. In place of the apprentice,
+forth order interpolation methods were used to make smooth
+trajectories between poses. Forth order interpolation was used
+in order to limit the jerk on each of the joints. The resulting
+trajectory is a smooth well defined motion.</p>
+		
+	</section>
+
+	<section  class="col mid">
+	<p><a href="pix/underhand.jpg"><img src="pix/keyframe.jpg" width = 300 /></a></p>
+	<p>OpenHUBO using key-frame based method for throwing trajectory
+creation. Frames are read from top left to bottom right.</p>
+		
+	</section>
+
+	<section class="col">
+		<iframe width="300" height="225" src="http://www.youtube.com/embed/i_uFqsae3lw" frameborder="0" allowfullscreen></iframe>
+	</section>
+        
+
+        <a class="back-to-top" href="#main">Back to Top</a>
+</div>
+
+
+
+<!-- Third column -->
+
+
+
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="footer-content">
+        <ul class="footer-menu">
+            <li><a href="#main">Home</a></li>
+<!--            <li><a href="#services">Services</a></li> -->
+<!--            <li><a href="#portfolio">Portfolio</a></li> -->
+<!--            <li><a href="#about-us">About</a></li>-->
+            <li><a href="mailto:dan@danlofaro.com">Contact</a></li>
+            <!-- <li class="rss-feed"><a href="#">RSS Feed</a></li> -->
+        </ul>
+
+        <p class="footer-text">Copyright 2012 Daniel M. Lofaro | <a href="http://www.Styleshout.com">PageOne</a></p>
+    </div>
+
+
+      </section>
+
+</div>
+
+
+</footer>
+
+</body>
+</html>
